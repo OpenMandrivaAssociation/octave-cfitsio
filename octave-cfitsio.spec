@@ -3,14 +3,14 @@
 Summary:	I/O routines to read and write FITS (Flexible Image Transport System) files
 Name:		octave-cfitsio
 Version:	0.0.4
-Release:	1
-License:	GPLv3.0+
+Release:	2
+License:	GPLv3+
 Group:		Sciences/Mathematics
+#Url:		https://packages.octave.org/cfitsio/
 Url:		https://octave-cfitsio.sourceforge.io/
-Source0:	https://downloads.sourceforge.net/project/octave-cfitsio/v%{version}/%{name}-%{version}.tar.gz
-#BuildArch:	noarch
+Source0:	https://downloads.sourceforge.net/project/octave-cfitsio/v%{version}/octave-cfitsio-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.4.0
+BuildRequires:  octave-devel >= 4.0.0
 BuildRequires:	pkgconfig(cfitsio)
 
 Requires:	octave(api) = %{octave_api}
@@ -19,15 +19,16 @@ Requires(post): octave
 Requires(postun): octave
 
 %description
-An Octave/Matlab client library for cfitsio.
+I/O routines to read and write FITS (Flexible Image Transport System)
+files.
 
 %files
 %license COPYING
-%doc README.md NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
+%doc NEWS
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
 
 #---------------------------------------------------------------------------
 
