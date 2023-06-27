@@ -33,7 +33,7 @@ files.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}-%{version}
+%autosetup -p1
 
 %build
 %set_build_flags
