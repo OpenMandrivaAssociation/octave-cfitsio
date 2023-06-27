@@ -2,13 +2,13 @@
 
 Summary:	I/O routines to read and write FITS (Flexible Image Transport System) files
 Name:		octave-cfitsio
-Version:	0.0.4
-Release:	2
+Version:	0.0.5
+Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/cfitsio/
-Url:		https://octave-cfitsio.sourceforge.io/
-Source0:	https://downloads.sourceforge.net/project/octave-cfitsio/v%{version}/octave-cfitsio-%{version}.tar.gz
+Url:		https://github.com/gnu-octave/octave-cfitsio
+Source0:        https://github.com/gnu-octave/octave-cfitsio/archive/v%{version}/%{octpkg}-%{version}.tar.gz
 
 BuildRequires:  octave-devel >= 4.0.0
 BuildRequires:	pkgconfig(cfitsio)
@@ -33,7 +33,7 @@ files.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n %{octpkg}-%{version}
 
 %build
 %set_build_flags
