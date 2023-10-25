@@ -8,9 +8,9 @@ License:	GPLv3+
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/cfitsio/
 Url:		https://github.com/gnu-octave/octave-cfitsio
-Source0:        https://github.com/gnu-octave/octave-cfitsio/archive/v%{version}/%{octpkg}-%{version}.tar.gz
+Source0:	https://github.com/gnu-octave/octave-cfitsio/releases/download/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  octave-devel >= 4.0.0
+BuildRequires:	octave-devel >= 4.0.0
 BuildRequires:	pkgconfig(cfitsio)
 
 Requires:	octave(api) = %{octave_api}
