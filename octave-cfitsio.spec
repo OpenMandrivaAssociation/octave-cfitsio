@@ -3,7 +3,7 @@
 Summary:	I/O routines to read and write FITS (Flexible Image Transport System) files
 Name:		octave-cfitsio
 Version:	0.0.7
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/cfitsio/
